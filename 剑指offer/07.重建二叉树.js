@@ -33,9 +33,9 @@ var buildTree = function (preorder, inorder) {
   // 构建二叉树
   const binaryTree = new TreeNode(rootVal);
   // 递归构建左子树
-  node.left = buildTree(preLeft, inLeft);
+  binaryTree.left = buildTree(preLeft, inLeft);
   // 递归构建右子树
-  node.right = buildTree(preRight, inRight);
+  binaryTree.right = buildTree(preRight, inRight);
 
   return binaryTree;
 };
