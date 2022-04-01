@@ -16,6 +16,7 @@ var numWays = function (n) {
   return dp[n];
 };
 
+// 解法二：匿名函数
 var numWays = n => {
   if (n === 0 || n === 1 || n === 1000000008) {
     return 1;
